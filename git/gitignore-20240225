@@ -1,0 +1,116 @@
+#
+# Massive 'Super GitIgnore' for everything I'm concerned with...
+# TNovak 2024 02 25 Version
+#
+
+# Unity (3D) development garbage that are totally unnecessary...
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+# MemoryCaptures can get excessive in size and have security holes.
+[Mm]emoryCaptures/
+# Recordings can get excessive in size
+[Rr]ecordings/
+# Unity3D generated meta files and crash reports
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+# Packed Addressables & Temporary Andriod Assets
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+[Aa]ssets/[Ss]treamingAssets/aa.meta
+[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# OPTIONAL: by Project if you want Asset Store Plugins (then uncomment)
+# /[Aa]ssets/AssetStoreTools*
+# OPTIONAL: by Project if you want Builds ignored
+# *.apk
+# *.aab
+# *.unitypackage
+# *.app
+
+# Gradle Cache Directory
+.gradle/
+# Crashlytics generated file
+crashlytics-build.properties
+
+# XCode User settings
+xcuserdata/
+# Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+## Operating System Junk
+# Windows
+Thumbs.db
+Thumbs.db.meta
+# MacOS
+*.DS_Store
+Icon?
+*.pem
+
+## VS Code, VS Studio & Other Code Editors...
+.vs/
+*.vscode
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.ntvs*
+*.njsproj
+*.sw?
+
+## Node / React / NPM / Yarn and related...
+
+# depencencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js specific
+/.next/
+/out/
+
+# production
+/build
+dist
+dist-ssr
+.vercel
+
+# DB and environment
+.env*.local
+.env
+
+# log garbage
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,21 @@
+{
+   "name": "MyProgram",
+   "version": "1.0",
+   "author": "Tony Novak",
+   "company": "2Advanced Studios, LLC",
+   "email": "info@2advanced.com",
+   "url": "https://www.2advanced.com/",
+   "bugs": "https://github.com/2advanced/project/issues",
+   "license": "CC-BY-NC-SA-4.0",
+   "funding": [
+      {
+         "type": "Buy Us a Coffee!",
+         "url": "https://www.buymeacoffee.com/2advanced"
+      },
+      {
+         "type": "Our Patreon",
+         "url": "https://www.patreon.com/2Advanced"
+      }
+   ],
+   "description": "Join the Official 2Advanced Community on Discord at https://discord.gg/2advanced"
+}
