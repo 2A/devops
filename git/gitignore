@@ -1,6 +1,6 @@
 #
-# Massive 'Super GitIgnore' for everything I'm concerned with...
-# TNovak 2024 02 25 Version
+# Massive 'Super GitIgnore' for everything 2A is concerned with...
+# 2A 2025 03 04 Version
 #
 
 # Unity (3D) development garbage that are totally unnecessary...
@@ -35,19 +35,23 @@ sysinfo.txt
 
 # Gradle Cache Directory
 .gradle/
+
 # Crashlytics generated file
 crashlytics-build.properties
 
 # XCode User settings
 xcuserdata/
+
 # Xcode 8 and earlier
 *.xcscmblueprint
 *.xccheckout
 
 ## Operating System Junk
+
 # Windows
 Thumbs.db
 Thumbs.db.meta
+
 # MacOS
 *.DS_Store
 Icon?
@@ -77,7 +81,15 @@ Icon?
 *.njsproj
 *.sw?
 
-## Node / React / NPM / Yarn and related...
+## Node / React / React Native / NPM / Yarn and related...
+
+# native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
 # depencencies
 /node_modules
@@ -85,18 +97,32 @@ Icon?
 .pnp.js
 .yarn/install-state.gz
 
+# expo
+.expo
+web-build
+expo-env.d.ts
+
 # testing
 /coverage
 
 # next.js specific
 /.next/
 /out/
+next-env.d.ts
 
 # production
 /build
 dist
 dist-ssr
 .vercel
+
+# metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
 # DB and environment
 .env*.local
@@ -113,4 +139,4 @@ lerna-debug.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+app-example
