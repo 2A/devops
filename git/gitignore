@@ -54,7 +54,6 @@ Thumbs.db.meta
 
 # MacOS
 *.DS_Store
-Icon?
 *.pem
 
 ## VS Code, VS Studio & Other Code Editors...
