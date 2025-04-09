@@ -1,37 +1,12 @@
 #
 # Our All Inclusive 'Super GitIgnore' for everything 2A is concerned with...
-# 2A 2025 03 05 - last updated for React Native
+# 2A 2025 04 09 - improved for React, Next.js and removal of older Unity stuff
 #
 
-# Unity (3D) development garbage that are totally unnecessary...
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
-# MemoryCaptures can get excessive in size and have security holes.
-[Mm]emoryCaptures/
-# Recordings can get excessive in size
-[Rr]ecordings/
-# Unity3D generated meta files and crash reports
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
-sysinfo.txt
-# Packed Addressables & Temporary Andriod Assets
-[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
-[Aa]ssets/[Ss]treamingAssets/aa.meta
-[Aa]ssets/[Ss]treamingAssets/aa/*
-
-# OPTIONAL: by Project if you want Asset Store Plugins (then uncomment)
-# /[Aa]ssets/AssetStoreTools*
-# OPTIONAL: by Project if you want Builds ignored
-# *.apk
-# *.aab
-# *.unitypackage
-# *.app
+# Ignoring Native Builds for platforms (React Native)
+*.apk
+*.aab
+*.app
 
 # Gradle Cache Directory
 .gradle/
@@ -41,10 +16,6 @@ crashlytics-build.properties
 
 # XCode User settings
 xcuserdata/
-
-# Xcode 8 and earlier
-*.xcscmblueprint
-*.xccheckout
 
 ## Operating System Junk
 
@@ -56,11 +27,16 @@ Thumbs.db.meta
 *.DS_Store
 *.pem
 
-## VS Code, VS Studio & Other Code Editors...
-.vs/
-*.vscode
+## VS Code, VS Studio
 .vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/*.code-snippets
+.vscode-test
+
+# other code editors and IDEs
 .idea
 *.csproj
 *.unityproj
@@ -105,9 +81,9 @@ expo-env.d.ts
 /coverage
 
 # next.js specific
-/.next/
-/out/
-next-env.d.ts
+.next
+.swc
+out
 
 # production
 /build
@@ -118,14 +94,22 @@ dist-ssr
 # metro
 .metro-health-check*
 
-# debug
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# debug and optional cache
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+.npm
 
-# DB and environment
-.env*.local
+# dotenv environment variable files
 .env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
 # log garbage
 logs
@@ -133,9 +117,25 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
 lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
 
 # typescript
 *.tsbuildinfo
 app-example
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
